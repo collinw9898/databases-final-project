@@ -5,8 +5,8 @@
             <br><br><br><br>
 
             <?php
-                require("tableshow.php");
-                require("dbconnect.php");
+                require("../tableshow.php");
+                require("../dbconnect.php");
 
                 if(isset($_POST['update'])) {
                     $a_ID = $_POST['a_ID'];
