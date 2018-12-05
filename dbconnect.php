@@ -2,7 +2,7 @@
 
 $servername = "localhost";  // Local server: "localhost:3306". CS server: "localhost"
 $username = "root";
-$password = "root";
+$password = "";
 $dbname = "university";
 
 // Connect to db
