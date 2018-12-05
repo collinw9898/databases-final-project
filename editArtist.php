@@ -24,6 +24,8 @@
 
                     echo "Data updated successfully\n";
 
+                    show_artist($conn);
+
                     mysqli_close($conn);
                 }
 
@@ -40,6 +42,8 @@
                     }
 
                     echo "Data deleted successfully\n";
+
+                    show_artist($conn);
 
                     mysqli_close($conn);
                 }
@@ -67,14 +71,14 @@
                     <tr>
                         <td width = "250"> </td>
                         <td>
-                            <input name ="update" type ="submit" id ="update"  value ="Update">
+                            <input name ="update" type ="submit" id ="update"  value ="Update Artist">
                         </td>
                     </tr>
 
                     <tr>
                         <td width = "250"> </td>
                         <td>
-                            <input name ="delete" type ="submit" id ="delete"  value ="Delete">
+                            <input name ="delete" type ="submit" id ="delete"  value ="Delete Artist">
                         </td>
                     </tr>
                 </table>
