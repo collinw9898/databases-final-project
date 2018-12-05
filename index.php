@@ -18,6 +18,7 @@
 
             <?php 
                 require("dbconnect.php");
+                require("tableshow.php");
 
                 show_artist($conn);
             ?>
