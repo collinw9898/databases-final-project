@@ -5,9 +5,6 @@ function show_artists($conn) {
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
-		
-		echo "<br><h3> Instructor Table<h3> <br>";
-		
 		echo '<table border>';
 		echo '<thead><tr>';
 		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';

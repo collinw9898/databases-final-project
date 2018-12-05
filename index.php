@@ -10,8 +10,7 @@
             <table>
                 <tr>
                     <td><a href="insert.php" style="color:blue;font-weight:bold;">Insert </a> &nbsp&nbsp&nbsp&nbsp;</td>
-                    <td><a href="delete.php" style="color:blue;font-weight:bold;">Delete </a> &nbsp&nbsp&nbsp&nbsp;</td>
-                    <td><a href="editArtist.php" style="color:blue;font-weight:bold;">Update Artist</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                    <td><a href="edit.php" style="color:blue;font-weight:bold;">Edit Information</a> &nbsp&nbsp&nbsp&nbsp;</td>
                     <td><a href="display.php" style="color:blue;font-weight:bold;">Display</a> &nbsp&nbsp&nbsp&nbsp;</td>
                 </tr>
             </table>
