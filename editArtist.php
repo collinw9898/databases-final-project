@@ -24,7 +24,7 @@
 
                     echo "Data updated successfully\n";
 
-                    show_artist($conn);
+                    show_artists($conn);
 
                     mysqli_close($conn);
                 }
@@ -43,7 +43,7 @@
 
                     echo "Data deleted successfully\n";
 
-                    show_artist($conn);
+                    show_artists($conn);
 
                     mysqli_close($conn);
                 }
