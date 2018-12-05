@@ -3,7 +3,7 @@
 $servername = "localhost";  // Local server: "localhost:3306". CS server: "localhost"
 $username = "root";
 $password = "";
-$dbname = "university";
+$dbname = "museHub";
 
 // Connect to db
 $conn = new mysqli($servername, $username, $password, $dbname);
