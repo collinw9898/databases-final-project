@@ -7,7 +7,7 @@
 
    <body>
    <div style="height:900px; background-color: lightblue;" align="center">
-        <?php
+      <?php
 	  
 		require("tableshow.php");
 		require("dbconnect.php");
