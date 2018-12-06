@@ -31,7 +31,7 @@
                     $retval = mysqli_query($conn, $sql);
 
                     $sql = "INSERT INTO song_writer".
-                            "(song_id, artist) ".
+                            "(song_id, artist_id) ".
                             "VALUES ('$s_ID', '$artist')";
 
                     $retval = mysqli_query($conn, $sql);
