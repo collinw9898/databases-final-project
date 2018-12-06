@@ -4,15 +4,16 @@ body {
     text-align: center;
 }
 
+img {
+    size: 100px;
+}
+
 .header {
     width: 100%;
     background-color: #5c6bc0;
 }
 
-.content {
-    text-align:center;
-}
-
-img {
-    size: 200px;
+.nav {
+    width: 100%;
+    background-color: #26418f;
 }
