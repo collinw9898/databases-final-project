@@ -78,4 +78,31 @@ function show_recordLabels($conn) {
 	}
 }
 
+function show_songs($conn) {
+	$sql = "SELECT song_id, song_title, album_name, song.genre_id FROM song, album WHERE song.album_id = album.album_id";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		echo '<table border>';
+		echo '<thead><tr>';
+		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '</tr></thead>';
+		echo '<tbody>';
+
+		while($row = $result->fetch_assoc()) {
+			echo '<tr>';
+			echo "<td>" . $row["song_id"]. "</td>";
+			echo "<td>" . $row["song_title"]. "</td>";
+			echo "<td>" . $row["album_name"]. "</td>";
+			echo "<td>" . $row["song.genre_id"]. "</td>";
+			echo '</tr>';
+		}
+		
+		echo '</tbody>';
+		echo '</table>';
+	} else {
+		echo "0 results";
+	}
+}
+
 ?>
