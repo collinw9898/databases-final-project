@@ -33,7 +33,7 @@ function show_albums($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."Album ID".'</th>'.'<th>'."Album Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '<th>'."Album ID".'</th>'.'<th>'."Album Name".'</th>'.'<th>'."Artist".'</th>'.'<th>'."Record Label".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 
@@ -41,6 +41,7 @@ function show_albums($conn) {
 			echo '<tr>';
 			echo "<td>" . $row["album_id"]. "</td>";
 			echo "<td>" . $row["album_name"]. "</td>";
+			echo "<td>" . $row["artist_name"]. "</td>";
 			echo "<td>" . $row["genre_id"]. "</td>";
 			echo '</tr>';
 		}

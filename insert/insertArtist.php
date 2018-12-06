@@ -20,7 +20,7 @@
                     $a_ID = bin2hex(openssl_random_pseudo_bytes(5));
 
                     $a_Name = $_POST['a_Name'];
-                    $record_Label = $_POST['record_Label'];
+                    $record_Label = $_POST['label'];
                     
                     $sql = "INSERT INTO artist".
                             "(artist_id, artist_name, label_id)".
@@ -53,11 +53,24 @@
                         </tr>
 
                         <tr>
-                            <td width = "250">Record Label</td>
-                            <td>
-                                <input name ="record_Label" type ="text" id ="record_Label">
-                            </td>
-                        </tr>
+                        <td width = "250">Change Record Label</td>
+                        <td>
+                            <select name="label" id="label">
+                                <option value=""></option>
+                                <?php 
+                                    $sql = "SELECT label_id, label_name FROM record_label";
+
+                                    $result = mysqli_query($conn, $sql);
+
+                                    if ($result->num_rows > 0) {                              
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row["label_id"] . '">' . $row["label_name"] . '</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
 
                         <tr>
                             <td width = "250"> </td>
