@@ -8,7 +8,7 @@
         <div align="center">
             <div class="header"><img class="musehub" src="../musehub.png" /></div>
             <div class="nav">
-                <a href="../index.php">Back</a>
+                <a href="../edit.php">Back</a>
             </div>
             <br><br><br>
 
@@ -19,9 +19,10 @@
                 if(isset($_POST['update'])) {
                     $s_ID = $_POST['s_ID'];
                     $s_Title = $_POST['s_Title'];
+                    $genre = $_POST['genre'];
 
                     $sql = "UPDATE song ".
-                            "SET song_title = '$s_Title' ".
+                            "SET song_title = '$s_Title', genre_id = '$genre' ".
                             "WHERE song_id = '$s_ID'";
 
                     $retval = mysqli_query($conn, $sql);
@@ -73,6 +74,26 @@
                         <td width = "250">New Song Title</td>
                         <td>
                             <input name ="s_Title" type ="text" id ="s_Title">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width = "250">Change Genre</td>
+                        <td>
+                            <select name="genre" id="genre">
+                                <option value=""></option>
+                                <?php 
+                                    $sql = "SELECT genre_id FROM genre";
+
+                                    $result = mysqli_query($conn, $sql);
+
+                                    if ($result->num_rows > 0) {                              
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row["genre_id"] . '">' . $row["genre_id"] . '</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
                         </td>
                     </tr>
 
