@@ -18,8 +18,9 @@
 
                 if(isset($_POST['insert'])) {
                     $s_ID = bin2hex(openssl_random_pseudo_bytes(5));
-
+                    
                     $s_Name = $_POST['s_Name'];
+                    $a_ID =  $_POST['artist'];
                     $genre = $_POST['genre'];
                     
                     $sql = "INSERT INTO song".
@@ -55,7 +56,7 @@
                         <tr>
                             <td width = "250">Artist</td>
                             <td>
-                                <select name="genre" id="genre">
+                                <select name="artist" id="artist">
                                     <option value=""></option>
                                     <?php 
                                         $sql = "SELECT artist_id, artist_name FROM artist";
@@ -75,7 +76,7 @@
                         <tr>
                             <td width = "250">Album (Optional)</td>
                             <td>
-                                <select name="genre" id="genre">
+                                <select name="album" id="album">
                                     <option value=""></option>
                                     <?php 
                                         $sql = "SELECT album_id, album_name FROM album";
