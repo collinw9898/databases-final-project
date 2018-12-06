@@ -93,6 +93,7 @@ function show_songs($conn) {
 			echo '<tr>';
 			echo "<td>" . $row["song_id"]. "</td>";
 			echo "<td>" . $row["song_title"]. "</td>";
+			echo "<td>" . $row["artist_name"]. "</td>";
 			echo "<td>" . $row["album_name"]. "</td>";
 			echo "<td>" . $row["genre_id"]. "</td>";
 			echo '</tr>';

@@ -58,7 +58,7 @@
                                 <select name="genre" id="genre">
                                     <option value=""></option>
                                     <?php 
-                                        $sql = "SELECT genre_id FROM genre";
+                                        $sql = "SELECT * FROM genre";
 
                                         $retval = mysqli_query($conn, $sql);
 
