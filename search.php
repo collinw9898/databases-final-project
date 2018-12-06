@@ -180,12 +180,18 @@
                         <td>
                             <input name ="album_name" type ="text" id ="album_name">
                         </td>
+                        <td>
+                            <input name ="search_album" type ="submit" id ="search_album"  value ="Search Album">
+                        </td>
                     </tr>
 
                     <tr>
                         <td width = "250">Search Arist Name</td>
                         <td>
                             <input name ="artist_name" type ="text" id ="artist_name">
+                        </td>
+                        <td>
+                            <input name ="search_artist" type ="submit" id ="search_artist"  value ="Search Artist">
                         </td>
                     </tr>
 
@@ -194,6 +200,9 @@
                         <td>
                             <input name ="g_ID" type ="text" id ="g_ID">
                         </td>
+                        <td>
+                            <input name ="search_genre" type ="submit" id ="search_genre"  value ="Search Genre">
+                        </td>
                     </tr>
 
                     <tr>
@@ -201,31 +210,6 @@
                         <td>
                             <input name ="song_title" type ="text" id ="song_title">
                         </td>
-                    </tr>
-
-                    <tr>
-                        <td width = "250"> </td>
-                        <td>
-                            <input name ="search_album" type ="submit" id ="search_album"  value ="Search Album">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td width = "250"> </td>
-                        <td>
-                            <input name ="search_artist" type ="submit" id ="search_artist"  value ="Search Artist">
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td width = "250"> </td>
-                        <td>
-                            <input name ="search_genre" type ="submit" id ="search_genre"  value ="Search Genre">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td width = "250"> </td>
                         <td>
                             <input name ="search_song" type ="submit" id ="search_song"  value ="Search Song">
                         </td>
