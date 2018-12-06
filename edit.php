@@ -5,8 +5,8 @@
     </head>
     
     <body>
-        <div>
-            <div class="header"><image src="musehub.png" /></div>
+        <div class="content">
+            <div class="header"><img src="musehub.png" /></div>
 
             <br><br><br><br>
             <table>

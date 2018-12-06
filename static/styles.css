@@ -2,7 +2,6 @@ body {
     font-family: Arial;
     background-color: white;
     text-align: center;
-    align-content: center;
 }
 
 .header {
@@ -10,6 +9,10 @@ body {
     background-color: #5c6bc0;
 }
 
-image {
-    size: 400px;
+.content {
+    text-align:center;
+}
+
+img {
+    size: 200px;
 }
