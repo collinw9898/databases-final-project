@@ -12,9 +12,9 @@
                     $r_ID = $_POST['r_ID'];
                     $r_Name = $_POST['r_Name'];
 
-                    $sql = "UPDATE artist ".
-                            "SET artist_name = '$r_Name' ".
-                            "WHERE artist_id = '$r_ID'";
+                    $sql = "UPDATE record_label ".
+                            "SET label_name = '$r_Name' ".
+                            "WHERE label_id = '$r_ID'";
 
                     $retval = mysqli_query($conn, $sql);
 
@@ -32,8 +32,8 @@
                 else if(isset($_POST['delete'])) {
                     $r_ID = $_POST['r_ID'];
 
-                    $sql = "DELETE FROM artist ".
-                            "WHERE artist_id = '$r_ID'";
+                    $sql = "DELETE FROM record_label ".
+                            "WHERE label_id = '$r_ID'";
 
                     $retval = mysqli_query($conn, $sql);
 
@@ -51,7 +51,7 @@
                 else {
             ?>
 
-            <p>Please enter the ID of the artist to update</p>
+            <p>Please enter the ID of the record label to update</p>
             <form method="post" action="<?php $_PHP_SELF ?>">
                 <table width = "600" border = "0" cellspacing = "1" cellpadding = "2">
                     <tr>
@@ -62,7 +62,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250">New artist name</td>
+                        <td width = "250">New record label name</td>
                         <td>
                             <input name ="r_Name" type ="text" id ="r_Name">
                         </td>
