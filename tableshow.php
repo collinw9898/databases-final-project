@@ -41,7 +41,7 @@ function show_albums($conn) {
 			echo '<tr>';
 			echo "<td>" . $row["album_id"]. "</td>";
 			echo "<td>" . $row["album_name"]. "</td>";
-			echo "<td>" . $row["genre_name"]. "</td>";
+			echo "<td>" . $row["genre_id"]. "</td>";
 			echo '</tr>';
 		}
 		
