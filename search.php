@@ -123,6 +123,44 @@
                     mysqli_close($conn);
                 }
 
+                else if(isset($_POST['search_song'])) {
+                    $song_title = $_POST['song_title'];
+
+                    $sql = "SELECT * ".
+                            "FROM song ".
+                            "WHERE song_title = '$song_title'";
+
+                    $result = $conn->query($sql);     
+
+                    $retval = mysqli_query($conn, $sql);
+
+                    if(!$retval) {
+                        die('Could not find genre data: ' . mysqli_error($conn));
+                    }
+
+                    if ($result->num_rows > 0) {
+		                echo '<table border>';
+		                echo '<thead><tr>';
+		                echo '<th>'."ID".'</th>'.'<th>'."Song Name".'</th>';
+		                echo '</tr></thead>';
+		                echo '<tbody>';
+
+		                while($row = $result->fetch_assoc()) {
+			                echo '<tr>';
+			                echo "<td>" . $row["song_id"]. "</td>";
+                            echo "<td>" . $row["song_title"]. "</td>";
+			                echo '</tr>';
+		                }
+		
+		                echo '</tbody>';
+		                echo '</table>';
+	                } else {
+		                echo "0 results";
+                	}
+
+                    mysqli_close($conn);
+                }
+
                 else {
             ?>
 
@@ -151,6 +189,13 @@
                     </tr>
 
                     <tr>
+                        <td width = "250">Search Song Name</td>
+                        <td>
+                            <input name ="song_title" type ="text" id ="song_title">
+                        </td>
+                    </tr>
+
+                    <tr>
                         <td width = "250"> </td>
                         <td>
                             <input name ="search_album" type ="submit" id ="search_album"  value ="Search Album">
@@ -168,6 +213,13 @@
                         <td width = "250"> </td>
                         <td>
                             <input name ="search_genre" type ="submit" id ="search_genre"  value ="Search Genre">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width = "250"> </td>
+                        <td>
+                            <input name ="search_song" type ="submit" id ="search_song"  value ="Search Song">
                         </td>
                     </tr>
                 </table>
