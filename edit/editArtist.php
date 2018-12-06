@@ -51,7 +51,7 @@
                 else {
             ?>
 
-            <p>Please enter the ID of the instructor to update</p>
+            <p>Please enter the ID of the artist to update</p>
             <form method="post" action="<?php $_PHP_SELF ?>">
                 <table width = "600" border = "0" cellspacing = "1" cellpadding = "2">
                     <tr>

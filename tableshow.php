@@ -52,4 +52,30 @@ function show_albums($conn) {
 	}
 }
 
+function show_recordLabels($conn) {
+	$sql = "SELECT label_id, label_name, year_established FROM record_label";
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		echo '<table border>';
+		echo '<thead><tr>';
+		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '</tr></thead>';
+		echo '<tbody>';
+
+		while($row = $result->fetch_assoc()) {
+			echo '<tr>';
+			echo "<td>" . $row["label_id"]. "</td>";
+			echo "<td>" . $row["label_name"]. "</td>";
+			echo "<td>" . $row["year_established"]. "</td>";
+			echo '</tr>';
+		}
+		
+		echo '</tbody>';
+		echo '</table>';
+	} else {
+		echo "0 results";
+	}
+}
+
 ?>
