@@ -11,9 +11,10 @@
             <div class="nav">
                 <table>
                     <tr>
-                        <td><a href="insert.php" style="color:blue;font-weight:bold;">Insert </a> &nbsp&nbsp&nbsp&nbsp;</td>
-                        <td><a href="edit.php" style="color:blue;font-weight:bold;">Edit Information</a> &nbsp&nbsp&nbsp&nbsp;</td>
-                        <td><a href="display.php" style="color:blue;font-weight:bold;">Display</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="insert.php">Insert </a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="search.php">Search </a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="edit.php">Edit Information</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="display.php">Display</a> &nbsp&nbsp&nbsp&nbsp;</td>
                     </tr>
                 </table>
             </div>
