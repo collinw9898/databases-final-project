@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
     <body >
-        <div style="min-height:900px; background-color: lightblue;" align="center">
+        <div style="background-color: lightblue;" align="center">
             <table>
                 <tr><td><image src="musehub.png" width="150" height="100"></td></tr>
             </table>
