@@ -18,6 +18,7 @@
                     </tr>
                 </table>
             </div>
+            <br><br><br>
 
             <?php 
                 require("dbconnect.php");

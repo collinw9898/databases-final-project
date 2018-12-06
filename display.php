@@ -11,6 +11,7 @@
             <div class="nav">
                 <a href="index.php">Back</a>
             </div>
+            <br><br><br>
 
             <?php
                 require("dbconnect.php");
@@ -23,11 +24,6 @@
                 echo "<br><br>";
                 show_songs($conn);
             ?>
-
-            <br><br><br><br>
-            <hr width="50">
-            <a href="index.php" style="color:red;font-weight:bold;">Home</a>
-            <hr width="50">
         </div>
     </body> 
 </html>
