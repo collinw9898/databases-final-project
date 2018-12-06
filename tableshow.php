@@ -85,7 +85,7 @@ function show_songs($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."Song ID".'</th>'.'<th>'."Song Title".'</th>'.'<th>'."Record Label".'</th>'.'<th>'."Genre".'</th>';
+		echo '<th>'."Song ID".'</th>'.'<th>'."Song Title".'</th>'.'<th>'."Artist".'</th>'.'<th>'."Record Label".'</th>'.'<th>'."Genre".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 
