@@ -79,9 +79,7 @@ function show_recordLabels($conn) {
 }
 
 function show_songs($conn) {
-	$sql = "SELECT song.song_id, song_title, album_name, artist_name, song.genre_id ".
-			"FROM song, album, song_writer, artist ".
-			"WHERE song.album_id = album.album_id AND song.song_id = song_writer.song_id AND song_writer.artist_id = artist.artist_id";
+	$sql = "SELECT song.song_id, song_title, album_name, artist_name, song.genre_id FROM song, album, song_writer, artist WHERE song.album_id = album.album_id AND song.song_id = song_writer.song_id AND song_writer.artist_id = artist.artist_id";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {

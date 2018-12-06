@@ -66,6 +66,8 @@
                                             while($row = $result->fetch_assoc()) {
                                                 echo '<option value="' . $row["genre_id"] . '">' . $row["genre_id"] . '</option>';
                                             }
+                                        } else {
+                                            echo "<option>error</option>";
                                         }
                                     ?>
                                 </select>
