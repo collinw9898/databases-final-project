@@ -22,10 +22,17 @@
                     $s_Name = $_POST['s_Name'];
                     $a_ID =  $_POST['album'];
                     $genre = $_POST['genre'];
+                    $artist = $_POST['artist'];
                     
                     $sql = "INSERT INTO song".
                             "(song_id, song_title, album_id, genre_id) ".
                             "VALUES ('$s_ID', '$s_Name', '$a_ID', '$genre')";
+
+                    $retval = mysqli_query($conn, $sql);
+
+                    $sql = "INSERT INTO song_writer".
+                            "(song_id, artist) ".
+                            "VALUES ('$s_ID', '$artist')";
 
                     $retval = mysqli_query($conn, $sql);
 
