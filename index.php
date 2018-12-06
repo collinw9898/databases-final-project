@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html> 
-    <body >
-        <div style="background-color: lightblue;" align="center">
-            <table>
-                <tr><td><image src="musehub.png"></td></tr>
-            </table>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    
+    <body>
+        <div>
+            <div class="header"><image src="musehub.png" /></div>
 
             <br><br><br><br>
             <table>
