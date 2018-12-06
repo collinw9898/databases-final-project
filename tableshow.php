@@ -7,7 +7,7 @@ function show_artists($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '<th>'."Artist ID".'</th>'.'<th>'."Artist Name".'</th>'.'<th>'."Record Label".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 
@@ -33,7 +33,7 @@ function show_albums($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '<th>'."Album ID".'</th>'.'<th>'."Album Name".'</th>'.'<th>'."Record Label".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 
@@ -59,7 +59,7 @@ function show_recordLabels($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '<th>'."Record Label ID".'</th>'.'<th>'."Record Label Name".'</th>'.'<th>'."Year Established".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 
@@ -85,7 +85,7 @@ function show_songs($conn) {
 	if ($result->num_rows > 0) {
 		echo '<table border>';
 		echo '<thead><tr>';
-		echo '<th>'."ID".'</th>'.'<th>'."Name".'</th>'.'<th>'."Record Label".'</th>';
+		echo '<th>'."Song ID".'</th>'.'<th>'."Song Title".'</th>'.'<th>'."Record Label".'</th>'.'<th>'."Genre".'</th>';
 		echo '</tr></thead>';
 		echo '<tbody>';
 

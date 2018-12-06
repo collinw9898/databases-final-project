@@ -11,6 +11,8 @@
                 require("tableshow.php");
                 show_artists($conn);
                 show_albums($conn);
+                show_recordLabels($conn);
+                show_songs($conn);
             ?>
 
             <br><br><br><br>
