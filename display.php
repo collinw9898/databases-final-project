@@ -8,14 +8,15 @@
 <?php
 require("dbconnect.php");
 require("tableshow.php");
-show_instructor($conn);
+show_artists($conn);
+show_albums($conn);
 ?>
 
 
 
 <br><br><br><br>
 <hr width="50">
-<a href="Frontpage.html" style="color:red;font-weight:bold;">Home</a>
+<a href="index.php" style="color:red;font-weight:bold;">Home</a>
 <hr width="50">
 </div>
 </body> </html>

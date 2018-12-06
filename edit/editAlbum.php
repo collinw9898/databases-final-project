@@ -51,7 +51,7 @@
                 else {
             ?>
 
-            <p>Please enter the ID of the instructor to update</p>
+            <p>Please enter the ID of the album to update</p>
             <form method="post" action="<?php $_PHP_SELF ?>">
                 <table width = "600" border = "0" cellspacing = "1" cellpadding = "2">
                     <tr>
@@ -89,7 +89,7 @@
             ?>
             <br><br><br><br>
             <hr width="50">
-            <a href="index.php" style="color:red;font-weight:bold;">Home</a>
+            <a href="../index.php" style="color:red;font-weight:bold;">Home</a>
             <hr width="50">
         </div>
     </body>
