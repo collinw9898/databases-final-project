@@ -16,12 +16,16 @@
             <?php
                 require("dbconnect.php");
                 require("tableshow.php");
+                echo "<h3> Artists </h3>";
                 show_artists($conn);
                 echo "<br><br>";
+                echo "<h3> Albums </h3>";
                 show_albums($conn);
                 echo "<br><br>";
+                echo "<h3> Record Labels </h3>";
                 show_recordLabels($conn);
                 echo "<br><br>";
+                echo "<h3> Songs </h3>";
                 show_songs($conn);
             ?>
         </div>

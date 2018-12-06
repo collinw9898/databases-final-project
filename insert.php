@@ -20,12 +20,10 @@
             </div>
             <br><br><br>
 
-            <?php 
-                require("dbconnect.php");
-                require("tableshow.php");
+            <h1> Want to add something? </h1>
 
-                show_artists($conn);
-            ?>
+            <p> We're glad to see you want to contribute your knowledge! </p>
+            <p> Go ahead and select what you'd like to add, and enter the needed information </p>
         </div>
     </body> 
 </html>

@@ -20,12 +20,9 @@
             </div>
             <br><br><br>
 
-            <?php 
-                require("dbconnect.php");
-                require("tableshow.php");
-
-                show_artists($conn);
-            ?>
+            <h1> Welcome to museHub! </h1>
+            <p> museHub is a music library tool for learning more information about music </p>
+            <p> You can either view the currently stored information, or contribute your own knowledge </p>
         </div>
     </body> 
 </html>
