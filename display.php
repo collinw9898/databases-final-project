@@ -5,13 +5,18 @@
     </head>
     
     <body>
-        <div>
+        <div align="center">
+            <div class="header"><img src="musehub.png" /></div>
+
             <?php
                 require("dbconnect.php");
                 require("tableshow.php");
                 show_artists($conn);
+                echo "<br><br>";
                 show_albums($conn);
+                echo "<br><br>";
                 show_recordLabels($conn);
+                echo "<br><br>";
                 show_songs($conn);
             ?>
 
