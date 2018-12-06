@@ -53,6 +53,46 @@
                         </tr>
 
                         <tr>
+                            <td width = "250">Artist</td>
+                            <td>
+                                <select name="genre" id="genre">
+                                    <option value=""></option>
+                                    <?php 
+                                        $sql = "SELECT artist_id, artist_name FROM artist";
+
+                                        $result = mysqli_query($conn, $sql);
+
+                                        if ($result->num_rows > 0) {                              
+                                            while($row = $result->fetch_assoc()) {
+                                                echo '<option value="' . $row["artist_id"] . '">' . $row["artist_name"] . '</option>';
+                                            }
+                                        }
+                                    ?>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td width = "250">Album (Optional)</td>
+                            <td>
+                                <select name="genre" id="genre">
+                                    <option value=""></option>
+                                    <?php 
+                                        $sql = "SELECT album_id, album_name FROM album";
+
+                                        $result = mysqli_query($conn, $sql);
+
+                                        if ($result->num_rows > 0) {                              
+                                            while($row = $result->fetch_assoc()) {
+                                                echo '<option value="' . $row["album_id"] . '">' . $row["album_name"] . '</option>';
+                                            }
+                                        }
+                                    ?>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
                             <td width = "250">Genre</td>
                             <td>
                                 <select name="genre" id="genre">
