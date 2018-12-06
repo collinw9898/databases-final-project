@@ -6,7 +6,7 @@
     
     <body>
         <div align="center">
-            <div class="header"><img src="musehub.png" /></div>
+            <div class="header"><img class="musehub" src="musehub.png" /></div>
 
             <div class="nav">
                 <table>
@@ -16,7 +16,8 @@
                         <td><a href="display.php" style="color:blue;font-weight:bold;">Display</a> &nbsp&nbsp&nbsp&nbsp;</td>
                     </tr>
                 </table>
-            </div>  
+            </div>
+            <br><br><br>
 
             <?php 
                 require("dbconnect.php");
