@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    
     <body>
         <div style="height:900px; background-color: lightblue;" align="center">
             <br><br><br><br>
