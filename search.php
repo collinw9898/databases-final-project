@@ -186,7 +186,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250">Search Arist Name</td>
+                        <td width = "250">Search Artist Name</td>
                         <td>
                             <input name ="artist_name" type ="text" id ="artist_name">
                         </td>
