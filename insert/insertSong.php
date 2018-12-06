@@ -29,10 +29,10 @@
                     $retval = mysqli_query($conn, $sql);
 
                     if(!$retval) {
-                        die('Could not update data: ' . mysqli_error($conn));
+                        die('Could not insert data: ' . mysqli_error($conn));
                     }
 
-                    echo "Data updated successfully\n";
+                    echo "Data inserted successfully\n";
 
                     show_songs($conn);
 
@@ -57,10 +57,17 @@
                             <td>
                                 <select name="genre" id="genre">
                                     <option value=""></option>
-                                    <option value="Rock">Rock</option>
-                                    <option value="Pop">Pop</option>
-                                    <option value="Rap">Rap</option>
-                                    <option value="Country">Country</option>
+                                    <?php 
+                                        $sql = "SELECT genre_id FROM genre";
+
+                                        $retval = mysqli_query($conn, $sql);
+
+                                        if ($result->num_rows > 0) {                              
+                                            while($row = $result->fetch_assoc()) {
+                                                echo '<option value="' . $row["genre_id"] . '">' . $row["genre_id"] . '</option>';
+                                            }
+                                        }
+                                    ?>
                                 </select>
                             </td>
                         </tr>
