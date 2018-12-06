@@ -1,0 +1,39 @@
+INSERT INTO genre (genre_id, description) VALUES ('Rap', 'A musical form of vocal delivery that incorporates rhyme, rhythmic speech, and street vernacular.');
+INSERT INTO genre (genre_id, description) VALUES('Pop', 'Identifying factors include generally short to medium-length songs written in a basic format, often the verse-chorus structure, as well as common use of repeated choruses, melodic tunes, and hooks.');
+INSERT INTO genre (genre_id, description) VALUES('Rock', 'Rock music has its roots in 1940s and 1950s rock and roll, a style which drew heavily on the genres of blues, rhythm and blues, and from country music.');
+INSERT INTO genre (genre_id, description) VALUES('Country', 'Country music is a genre of popular music that originated in the southern United States in the early 1920s. It takes its roots from genres such as folk music, especially Appalachian folk and Western music, and blues.');
+
+INSERT INTO record_label (label_id, label_name, year_established) VALUES ('4jez54knai' , 'Kon Live Distribution', 2007);
+INSERT INTO record_label (label_id, label_name, year_established) VALUES ('2p8uigzizz' , 'Interscope Records', 1989);
+INSERT INTO record_label (label_id, label_name, year_established) VALUES ('g7ej2lxxo0' , 'Elektra Records', 1950);
+INSERT INTO record_label (label_id, label_name, year_established) VALUES ('xbfoo415lq' , 'Capitol Records Nashville' , 1945);
+
+INSERT INTO artist (artist_id, artist_name, label_id) VALUES ('c4agk91wot', 'Snoop Dogg', '2p8uigzizz');
+INSERT INTO artist (artist_id, artist_name, label_id) VALUES ('y9ykzujagt', 'Lady Gaga', '4jez54knai');
+INSERT INTO artist (artist_id, artist_name, label_id) VALUES ('7uts44xepm', 'Metallica', 'g7ej2lxxo0');
+INSERT INTO artist (artist_id, artist_name, label_id) VALUES ('v5329gkbnw', 'Garth Brooks', 'xbfoo415lq');
+
+INSERT INTO album (album_id, album_name, genre_id) VALUES ('6jcyt4qb5h', 'Doggystyle', 'Rap');
+INSERT INTO album (album_id, album_name, genre_id) VALUES ('7ro5bug1x5', 'Born This Way', 'Pop');
+INSERT INTO album (album_id, album_name, genre_id) VALUES ('njs7md2of1', 'Master of Puppets', 'Rock');
+INSERT INTO album (album_id, album_name, genre_id) VALUES ('vze5qvoy7c', 'No Fences', 'Country');
+
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('pn111j38d5', 'Bathtub', '6jcyt4qb5h', 'Rap');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('x18vtp5dgd', 'Pump Pump', '6jcyt4qb5h', 'Rap');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('8p1l1rs6mg', 'Who Am I', '6jcyt4qb5h', 'Rap');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('5m5sbxilud', 'Gin and Juice', '6jcyt4qb5h', 'Rap');
+
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('t9iv1t3q1d', 'Marry the Night', '7ro5bug1x5', 'Pop');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('ulpl7m05td', 'Born This Way', '7ro5bug1x5', 'Pop');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('avdsx1lz0z', 'Judas', '7ro5bug1x5', 'Pop');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('ukai0fugbj', 'The Edge of Glory', '7ro5bug1x5', 'Pop');
+
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('hb2tyw17x6', 'Battery', 'njs7md2of1', 'Rock');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('w40osl09vl', 'Master of Puppets', 'njs7md2of1', 'Rock');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('0igvg6mmfk', 'Disposable Heroes', 'njs7md2of1', 'Rock');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('nva9v5tmlw', 'Leper Messiah', 'njs7md2of1', 'Rock');
+
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('36z9mbps0u', 'The Thunder Rolls', 'vze5qvoy7c', 'Country');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('s0sj8kcfq2', 'Friends in Low Places', 'vze5qvoy7c', 'Country');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('e2xduqxl9h', 'Wild Horses', 'vze5qvoy7c', 'Country');
+INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('u6u15qf8lj', 'Wolves', 'vze5qvoy7c', 'Country');
