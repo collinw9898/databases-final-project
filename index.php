@@ -6,7 +6,7 @@
     
     <body>
         <div align="center">
-            <div class="header"><a href="index.php"><img class="musehub" src="../musehub.png" /></a></div>
+            <div class="header"><a href="index.php"><img class="musehub" src="musehub.png" /></a></div>
 
             <div class="nav">
                 <table>
