@@ -6,9 +6,7 @@
     
     <body>
         <div>
-            <table>
-                <tr><td><image src="musehub.png"></td></tr>
-            </table>
+            <div class="header"><image src="musehub.png" /></div>
 
             <br><br><br><br>
             <table>
