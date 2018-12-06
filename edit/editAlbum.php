@@ -19,9 +19,10 @@
                 if(isset($_POST['update'])) {
                     $a_ID = $_POST['a_ID'];
                     $a_Name = $_POST['a_Name'];
+                    $genre = $_POST['genre'];
 
                     $sql = "UPDATE album ".
-                            "SET album_name = '$a_Name' ".
+                            "SET album_name = '$a_Name', genre_id = '$genre' ".
                             "WHERE album_id = '$a_ID'";
 
                     $retval = mysqli_query($conn, $sql);
@@ -80,6 +81,26 @@
                         <td width = "250"> </td>
                         <td>
                             <input name ="update" type ="submit" id ="update"  value ="Update Album">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width = "250">Genre</td>
+                        <td>
+                            <select name="genre" id="genre">
+                                <option value=""></option>
+                                <?php 
+                                    $sql = "SELECT genre_id FROM genre";
+
+                                    $result = mysqli_query($conn, $sql);
+
+                                    if ($result->num_rows > 0) {                              
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row["genre_id"] . '">' . $row["genre_id"] . '</option>';
+                                        }
+                                    }
+                                ?>
+                            </select>
                         </td>
                     </tr>
 
