@@ -29,7 +29,7 @@
 
                     echo "Data updated successfully\n";
 
-                    show_artists($conn);
+                    show_recordLabels($conn);
 
                     mysqli_close($conn);
                 }
