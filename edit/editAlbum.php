@@ -5,8 +5,12 @@
     </head>
     
     <body>
-        <div>
-            <br><br><br><br>
+        <div align="center">
+            <div class="header"><img class="musehub" src="musehub.png" /></div>
+            <div class="nav">
+                <a href="index.php">Back</a>
+            </div>
+            <br><br><br>
 
             <?php
                 require("../tableshow.php");
@@ -91,10 +95,6 @@
             <?php
                 }
             ?>
-            <br><br><br><br>
-            <hr width="50">
-            <a href="../index.php" style="color:red;font-weight:bold;">Home</a>
-            <hr width="50">
         </div>
     </body>
 </html>
