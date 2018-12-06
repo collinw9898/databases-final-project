@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="static/styles.css">
     </head>
     <body>
-        <div style="height:900px; background-color: lightblue;" align="center">
+        <div>
             <br><br><br><br>
 
             <?php

@@ -5,7 +5,7 @@
     </head>
     
     <body>
-        <div style="background-color: lightblue;" align="center">
+        <div>
             <div class="header"><image src="musehub.png" /></div>
 
             <br><br><br><br>
