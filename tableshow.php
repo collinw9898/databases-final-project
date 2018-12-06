@@ -27,7 +27,7 @@ function show_artists($conn) {
 }
 
 function show_albums($conn) {
-	$sql = "SELECT album_id, album_name, genre_name FROM album, genre WHERE artist.genre_id = genre.genre_id";
+	$sql = "SELECT album_id, album_name, genre_name FROM album";
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
