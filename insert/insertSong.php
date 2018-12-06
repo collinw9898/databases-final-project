@@ -58,16 +58,14 @@
                                 <select name="genre" id="genre">
                                     <option value=""></option>
                                     <?php 
-                                        $sql = "SELECT * FROM genre";
+                                        $sql = "SELECT genre_id FROM genre";
 
-                                        $retval = mysqli_query($conn, $sql);
+                                        $result = mysqli_query($conn, $sql);
 
                                         if ($result->num_rows > 0) {                              
                                             while($row = $result->fetch_assoc()) {
                                                 echo '<option value="' . $row["genre_id"] . '">' . $row["genre_id"] . '</option>';
                                             }
-                                        } else {
-                                            echo "<option>error</option>";
                                         }
                                     ?>
                                 </select>
