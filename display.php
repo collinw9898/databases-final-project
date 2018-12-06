@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html> 
+    <head>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    
     <body>
         <div>
             <?php

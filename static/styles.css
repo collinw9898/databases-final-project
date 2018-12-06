@@ -1,9 +1,14 @@
 body {
     font-family: Arial;
     background-color: white;
+    text-align: center;
 }
 
 .header {
     width: 100%;
     background-color: #5c6bc0;
+}
+
+image {
+    size: 400px;
 }
