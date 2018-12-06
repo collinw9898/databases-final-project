@@ -37,3 +37,28 @@ INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('36z9mbps0u',
 INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('s0sj8kcfq2', 'Friends in Low Places', 'vze5qvoy7c', 'Country');
 INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('e2xduqxl9h', 'Wild Horses', 'vze5qvoy7c', 'Country');
 INSERT INTO song (song_id, song_title, album_id, genre_id) VALUES ('u6u15qf8lj', 'Wolves', 'vze5qvoy7c', 'Country');
+
+INSERT INTO song_writer (song_id, artist_id) VALUES ('pn111j38d5', 'c4agk91wot');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('x18vtp5dgd', 'c4agk91wot');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('8p1l1rs6mg', 'c4agk91wot');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('5m5sbxilud', 'c4agk91wot');
+
+INSERT INTO song_writer (song_id, artist_id) VALUES ('t9iv1t3q1d', 'y9ykzujagt');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('ulpl7m05td', 'y9ykzujagt');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('avdsx1lz0z', 'y9ykzujagt');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('ukai0fugbj', 'y9ykzujagt');
+
+INSERT INTO song_writer (song_id, artist_id) VALUES ('hb2tyw17x6', '7uts44xepm');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('w40osl09vl', '7uts44xepm');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('0igvg6mmfk', '7uts44xepm');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('nva9v5tmlw', '7uts44xepm');
+
+INSERT INTO song_writer (song_id, artist_id) VALUES ('36z9mbps0u', 'v5329gkbnw');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('s0sj8kcfq2', 'v5329gkbnw');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('e2xduqxl9h', 'v5329gkbnw');
+INSERT INTO song_writer (song_id, artist_id) VALUES ('u6u15qf8lj', 'v5329gkbnw');
+
+INSERT INTO album_creator (album_id, artist_id) VALUES ('6jcyt4qb5h', 'c4agk91wot');
+INSERT INTO album_creator (album_id, artist_id) VALUES ('7ro5bug1x5', 'y9ykzujagt');
+INSERT INTO album_creator (album_id, artist_id) VALUES ('njs7md2of1', '7uts44xepm');
+INSERT INTO album_creator (album_id, artist_id) VALUES ('vze5qvoy7c', 'v5329gkbnw');

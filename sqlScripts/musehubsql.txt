@@ -1,30 +1,44 @@
 create table Artist(
-	artist_id varchar(10), 
+	artist_id varchar(10) NOT NULL, 
 	primary key(artist_id), 
-	artist_name varchar(50), 
+	artist_name varchar(50) NOT NULL, 
 	label_id varchar(10));
 create table Record_label(
-	label_id varchar(10), 
+	label_id varchar(10) NOT NULL, 
 	primary key(label_id), 
-	label_name varchar(50), 
-	year_established int);
+	label_name varchar(50) NOT NULL, 
+	year_established int NOT NULL);
 create table Song(
-	song_id varchar(10), 
+	song_id varchar(10) NOT NULL, 
 	primary key(song_id), 
-	song_title varchar(50), 
+	song_title varchar(50) NOT NULL, 
 	album_id varchar(10), 
-	genre_id varchar(10)); 
+	genre_id varchar(10) NOT NULL); 
 create table Album(
-	album_id varchar(10), 
-	primary key(album_id), 
-	album_name varchar(50), 
-	genre_id varchar(10));
+	album_id varchar(10) NOT NULL, 
+	primary key(album_id),  
+	album_name varchar(50) NOT NULL, 
+	genre_id varchar(10) NOT NULL);
 create table Genre(
-	genre_id varchar(10), 
+	genre_id varchar(10) NOT NULL, 
 	primary key(genre_id), 
-	description varchar(200));
+	description varchar(200) NOT NULL);
+create table Song_Writer(
+	song_id varchar(10) NOT NULL,
+	artist_id varchar(10) NOT NULL);
+create table Album_Creator(
+	album_id varchar(10) NOT NULL,
+	artist_id varchar(10) NOT NULL);	
 
-after table is created, run the following to add foreign key restraints
+--after table is created, run the following to add foreign key restraints
+
+ALTER TABLE `song_writer` ADD FOREIGN KEY (`song_id`) REFERENCES `song`(`song_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `song_writer` ADD FOREIGN KEY (`artist_id`) REFERENCES `artist`(`artist_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `album_creator` ADD FOREIGN KEY (`album_id`) REFERENCES `album`(`album_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE `album_creator` ADD FOREIGN KEY (`artist_id`) REFERENCES `artist`(`artist_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ALTER TABLE `artist` ADD FOREIGN KEY (`label_id`) REFERENCES `record_label`(`label_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
@@ -33,3 +47,4 @@ ALTER TABLE `song` ADD FOREIGN KEY (`album_id`) REFERENCES `album`(`album_id`) O
 ALTER TABLE `song` ADD FOREIGN KEY (`genre_id`) REFERENCES `genre`(`genre_id`) ON DELETE RESTRICT ON UPDATE RESTRICT;
 
 ALTER TABLE `album` ADD FOREIGN KEY (`genre_id`) REFERENCES `genre`(`genre_id`) ON DELETE RESTRICT ON UPDATE RESTRICT; 
+
