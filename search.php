@@ -176,7 +176,7 @@
             <form method="post" action="<?php $_PHP_SELF ?>">
                 <table width = "600" border = "0" cellspacing = "1" cellpadding = "2">
                     <tr>
-                        <td width = "250">Search Album Name</td>
+                        <td width = "250">Album Name</td>
                         <td>
                             <input name ="album_name" type ="text" id ="album_name">
                         </td>
@@ -186,7 +186,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250">Search Artist Name</td>
+                        <td width = "250">Artist Name</td>
                         <td>
                             <input name ="artist_name" type ="text" id ="artist_name">
                         </td>
@@ -196,7 +196,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250">Search Genre Name</td>
+                        <td width = "250">Genre Name</td>
                         <td>
                             <input name ="g_ID" type ="text" id ="g_ID">
                         </td>
@@ -206,7 +206,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250">Search Song Name</td>
+                        <td width = "250">Song Name</td>
                         <td>
                             <input name ="song_title" type ="text" id ="song_title">
                         </td>
