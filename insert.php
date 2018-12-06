@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html> 
-    <body >
-        <div style="min-height:900px; background-color: lightblue;" align="center">
-            <table>
-                <tr><td><image src="Picture.png" width="150" height="100"></td></tr>
-            </table>
+<head>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    
+    <body>
+        <div align="center">
+            <div class="header"><img class="musehub" src="musehub.png" /></div>
 
-            <br><br><br><br>
-            <table>
-                <tr>
-                    <td><a href="insert/insertArtist.php" style="color:blue;font-weight:bold;">Insert Artists</a> &nbsp&nbsp&nbsp&nbsp;</td>
-                    <td><a href="insert/insertAlbum.php" style="color:blue;font-weight:bold;">Insert Albums</a> &nbsp&nbsp&nbsp&nbsp;</td>
-                    <td><a href="insert/insertRecordLabel.php" style="color:blue;font-weight:bold;">Insert Record Labels</a> &nbsp&nbsp&nbsp&nbsp;</td>
-                    <td><a href="insert/insertSong.php" style="color:blue;font-weight:bold;">Insert Songs</a> &nbsp&nbsp&nbsp&nbsp;</td>
-                </tr>
-            </table>
+            <div class="nav">
+                <table>
+                    <tr>
+                        <td><a href="insert/insertArtist.php">Insert Artists</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="insert/insertAlbum.php">Insert Albums</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="insert/insertRecordLabel.php">Insert Record Labels</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                        <td><a href="insert/insertSong.php">Insert Songs</a> &nbsp&nbsp&nbsp&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
 
             <?php 
                 require("dbconnect.php");
