@@ -6,7 +6,7 @@
     
     <body>
         <div align="center">
-            <div class="header"><img class="musehub" src="../musehub.png" /></div>
+            <div class="header"><a href="../index.php"><img class="musehub" src="../musehub.png" /></a></div>
             <div class="nav">
                 <a href="../insert.php">Back</a>
             </div>
