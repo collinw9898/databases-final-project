@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="static/styles.css">
+        <link rel="stylesheet" href="../static/styles.css">
     </head>
     
     <body>
         <div align="center">
-            <div class="header"><img class="musehub" src="musehub.png" /></div>
+            <div class="header"><img class="musehub" src="../musehub.png" /></div>
             <div class="nav">
                 <a href="index.php">Back</a>
             </div>
