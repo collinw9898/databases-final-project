@@ -78,14 +78,7 @@
                     </tr>
 
                     <tr>
-                        <td width = "250"> </td>
-                        <td>
-                            <input name ="update" type ="submit" id ="update"  value ="Update Album">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td width = "250">Genre</td>
+                        <td width = "250">Change Genre</td>
                         <td>
                             <select name="genre" id="genre">
                                 <option value=""></option>
@@ -101,6 +94,13 @@
                                     }
                                 ?>
                             </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width = "250"> </td>
+                        <td>
+                            <input name ="update" type ="submit" id ="update"  value ="Update Album">
                         </td>
                     </tr>
 
