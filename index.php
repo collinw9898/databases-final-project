@@ -3,7 +3,7 @@
     <body >
         <div style="background-color: lightblue;" align="center">
             <table>
-                <tr><td><image src="musehub.png" width="150" height="100"></td></tr>
+                <tr><td><image src="musehub.png"></td></tr>
             </table>
 
             <br><br><br><br>
