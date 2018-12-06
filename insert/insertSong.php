@@ -30,7 +30,7 @@
 
                     echo "Data updated successfully\n";
 
-                    show_artists($conn);
+                    show_songs($conn);
 
                     mysqli_close($conn);
                 }
